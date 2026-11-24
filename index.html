@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FreshMart – Supermarket Online</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <div class="logo">
+        <i class="fas fa-shopping-cart"></i>
+        <span>Fresh<strong>Mart</strong></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Beranda</a></li>
+        <li><a href="#promo">Promo</a></li>
+        <li><a href="#kategori">Kategori</a></li>
+        <li><a href="#produk">Produk</a></li>
+        <li><a href="#tentang">Tentang</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="btn-cart"><i class="fas fa-shopping-basket"></i> Keranjang <span class="cart-count">0</span></button>
+        <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <span class="badge-tag">🛒 Belanja Sekarang, Hemat Lebih Banyak!</span>
+      <h1>Kesegaran <span class="highlight">Terbaik</span><br/>Hanya di FreshMart</h1>
+      <p>Temukan ribuan produk segar pilihan dengan harga terjangkau. Dikirim langsung ke pintu rumah Anda setiap hari.</p>
+      <div class="hero-btns">
+        <a href="#produk" class="btn btn-primary">Belanja Sekarang</a>
+        <a href="#tentang" class="btn btn-outline">Pelajari Lebih Lanjut</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><strong>10K+</strong><span>Produk</span></div>
+        <div class="stat"><strong>50K+</strong><span>Pelanggan</span></div>
+        <div class="stat"><strong>4.9★</strong><span>Rating</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROMO BANNER ===== -->
+  <section class="promo-strip" id="promo">
+    <div class="container promo-grid">
+      <div class="promo-card promo-green">
+        <div class="promo-text">
+          <span>Diskon Spesial</span>
+          <h3>Sayur & Buah<br/>Hingga <b>40% OFF</b></h3>
+          <a href="#produk" class="btn btn-white-sm">Lihat Promo</a>
+        </div>
+        <img src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?w=300&q=80" alt="Buah Segar" />
+      </div>
+      <div class="promo-card promo-orange">
+        <div class="promo-text">
+          <span>Flash Sale</span>
+          <h3>Daging & Seafood<br/>Hemat <b>30%</b></h3>
+          <a href="#produk" class="btn btn-white-sm">Lihat Promo</a>
+        </div>
+        <img src="https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=300&q=80" alt="Daging Segar" />
+      </div>
+      <div class="promo-card promo-blue">
+        <div class="promo-text">
+          <span>Gratis Ongkir</span>
+          <h3>Belanja Min.<br/><b>Rp 150.000</b></h3>
+          <a href="#produk" class="btn btn-white-sm">Belanja Kini</a>
+        </div>
+        <img src="https://images.unsplash.com/photo-1534723452862-4c874018d66d?w=300&q=80" alt="Belanja Online" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== KATEGORI ===== -->
+  <section class="section" id="kategori">
+    <div class="container">
+      <div class="section-header">
+        <h2>Kategori <span class="highlight">Produk</span></h2>
+        <p>Temukan semua kebutuhan harian Anda dalam satu tempat</p>
+      </div>
+      <div class="kategori-grid">
+        <div class="kat-card">
+          <div class="kat-icon" style="background:#e8f5e9">🥦</div>
+          <span>Sayuran</span>
+        </div>
+        <div class="kat-card">
+          <div class="kat-icon" style="background:#fff3e0">🍎</div>
+          <span>Buah-buahan</span>
+        </div>
+        <div class="kat-card">
+          <div class="kat-icon" style="background:#fce4ec">🥩</div>
+          <span>Daging</span>
+        </div>
+        <div class="kat-card">
+          <div class="kat-icon" style="background:#e3f2fd">🐟</div>
+          <span>Seafood</span>
+        </div>
+        <div class="kat-card">
+          <div class="kat-icon" style="background:#f3e5f5">🥛</div>
+          <span>Susu & Olahan</span>
+        </div>
+        <div class="kat-card">
+          <div class="kat-icon" style="background:#e8f5e9">🍞</div>
+          <span>Roti & Kue</span>
+        </div>
+        <div class="kat-card">
+          <div class="kat-icon" style="background:#fff9c4">🧃</div>
+          <span>Minuman</span>
+        </div>
+        <div class="kat-card">
+          <div class="kat-icon" style="background:#fbe9e7">🧴</div>
+          <span>Perawatan</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRODUK UNGGULAN ===== -->
+  <section class="section section-gray" id="produk">
+    <div class="container">
+      <div class="section-header">
+        <h2>Produk <span class="highlight">Unggulan</span></h2>
+        <p>Pilihan terlaris dengan kualitas terjamin setiap harinya</p>
+      </div>
+      <div class="produk-grid">
+
+        <div class="produk-card">
+          <div class="badge-new">Baru</div>
+          <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?w=400&q=80" alt="Sayuran Segar" />
+          <div class="produk-info">
+            <span class="kat-label">Sayuran</span>
+            <h4>Sayuran Segar Mix</h4>
+            <div class="rating">⭐⭐⭐⭐⭐ <small>(128)</small></div>
+            <div class="harga-row">
+              <span class="harga">Rp 25.000</span>
+              <span class="harga-coret">Rp 35.000</span>
+            </div>
+            <button class="btn-tambah" onclick="addToCart(this)"><i class="fas fa-plus"></i> Tambah</button>
+          </div>
+        </div>
+
+        <div class="produk-card">
+          <div class="badge-sale">Sale</div>
+          <img src="https://images.unsplash.com/photo-1619566636858-adf3ef46400b?w=400&q=80" alt="Buah Tropis" />
+          <div class="produk-info">
+            <span class="kat-label">Buah</span>
+            <h4>Buah Tropis Pilihan</h4>
+            <div class="rating">⭐⭐⭐⭐⭐ <small>(95)</small></div>
+            <div class="harga-row">
+              <span class="harga">Rp 45.000</span>
+              <span class="harga-coret">Rp 65.000</span>
+            </div>
+            <button class="btn-tambah" onclick="addToCart(this)"><i class="fas fa-plus"></i> Tambah</button>
+          </div>
+        </div>
+
+        <div class="produk-card">
+          <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80" alt="Paket Sehat" />
+          <div class="produk-info">
+            <span class="kat-label">Paket</span>
+            <h4>Paket Makanan Sehat</h4>
+            <div class="rating">⭐⭐⭐⭐ <small>(74)</small></div>
+            <div class="harga-row">
+              <span class="harga">Rp 89.000</span>
+            </div>
+            <button class="btn-tambah" onclick="addToCart(this)"><i class="fas fa-plus"></i> Tambah</button>
+          </div>
+        </div>
+
+        <div class="produk-card">
+          <div class="badge-sale">-30%</div>
+          <img src="https://images.unsplash.com/photo-1563636619-e9143da7973b?w=400&q=80" alt="Susu Segar" />
+          <div class="produk-info">
+            <span class="kat-label">Susu</span>
+            <h4>Susu Segar Premium</h4>
+            <div class="rating">⭐⭐⭐⭐⭐ <small>(210)</small></div>
+            <div class="harga-row">
+              <span class="harga">Rp 18.000</span>
+              <span class="harga-coret">Rp 25.000</span>
+            </div>
+            <button class="btn-tambah" onclick="addToCart(this)"><i class="fas fa-plus"></i> Tambah</button>
+          </div>
+        </div>
+
+        <div class="produk-card">
+          <img src="https://images.unsplash.com/photo-1587334207408-cf8e9b65f8a2?w=400&q=80" alt="Roti Artisan" />
+          <div class="produk-info">
+            <span class="kat-label">Roti</span>
+            <h4>Roti Artisan Gandum</h4>
+            <div class="rating">⭐⭐⭐⭐ <small>(56)</small></div>
+            <div class="harga-row">
+              <span class="harga">Rp 32.000</span>
+            </div>
+            <button class="btn-tambah" onclick="addToCart(this)"><i class="fas fa-plus"></i> Tambah</button>
+          </div>
+        </div>
+
+        <div class="produk-card">
+          <div class="badge-new">Hot</div>
+          <img src="https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?w=400&q=80" alt="Jus Segar" />
+          <div class="produk-info">
+            <span class="kat-label">Minuman</span>
+            <h4>Jus Buah Segar</h4>
+            <div class="rating">⭐⭐⭐⭐⭐ <small>(187)</small></div>
+            <div class="harga-row">
+              <span class="harga">Rp 15.000</span>
+            </div>
+            <button class="btn-tambah" onclick="addToCart(this)"><i class="fas fa-plus"></i> Tambah</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FITUR KEUNGGULAN ===== -->
+  <section class="section" id="tentang">
+    <div class="container">
+      <div class="section-header">
+        <h2>Mengapa <span class="highlight">FreshMart?</span></h2>
+        <p>Kami berkomitmen memberikan pengalaman belanja terbaik</p>
+      </div>
+      <div class="fitur-grid">
+        <div class="fitur-card">
+          <div class="fitur-icon"><i class="fas fa-truck-fast"></i></div>
+          <h4>Pengiriman Cepat</h4>
+          <p>Pesanan dikirim dalam 2-3 jam langsung ke alamat Anda.</p>
+        </div>
+        <div class="fitur-card">
+          <div class="fitur-icon"><i class="fas fa-leaf"></i></div>
+          <h4>Produk Segar</h4>
+          <p>Semua produk dipilih langsung dari sumber terpercaya setiap hari.</p>
+        </div>
+        <div class="fitur-card">
+          <div class="fitur-icon"><i class="fas fa-tags"></i></div>
+          <h4>Harga Terjangkau</h4>
+          <p>Dapatkan harga terbaik dengan promo dan diskon setiap hari.</p>
+        </div>
+        <div class="fitur-card">
+          <div class="fitur-icon"><i class="fas fa-shield-halved"></i></div>
+          <h4>Belanja Aman</h4>
+          <p>Transaksi terlindungi dengan enkripsi dan sistem keamanan terkini.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALERI ===== -->
+  <section class="galeri-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Galeri <span class="highlight">Toko</span></h2>
+        <p>Suasana toko kami yang nyaman dan lengkap</p>
+      </div>
+      <div class="galeri-grid">
+        <img src="https://images.unsplash.com/photo-1604719312566-8912e9227c6a?w=600&q=80" alt="Supermarket 1" class="galeri-big" />
+        <img src="https://images.unsplash.com/photo-1578916171728-46686eac8d58?w=400&q=80" alt="Supermarket 2" />
+        <img src="https://images.unsplash.com/photo-1534723452862-4c874018d66d?w=400&q=80" alt="Supermarket 3" />
+        <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=400&q=80" alt="Supermarket 4" />
+        <img src="https://images.unsplash.com/photo-1573246123716-6b1782bfc499?w=400&q=80" alt="Supermarket 5" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="logo"><i class="fas fa-shopping-cart"></i> <span>Fresh<strong>Mart</strong></span></div>
+        <p>Supermarket modern dengan produk segar berkualitas untuk kebutuhan sehari-hari keluarga Indonesia.</p>
+        <div class="sosmed">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Layanan</h5>
+        <ul>
+          <li><a href="#">Cara Pesan</a></li>
+          <li><a href="#">Pengiriman</a></li>
+          <li><a href="#">Pengembalian</a></li>
+          <li><a href="#">Promo</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Perusahaan</h5>
+        <ul>
+          <li><a href="#">Tentang Kami</a></li>
+          <li><a href="#">Karier</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Kebijakan Privasi</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Kontak</h5>
+        <ul>
+          <li><i class="fas fa-phone"></i> 0800-1234-5678</li>
+          <li><i class="fas fa-envelope"></i> cs@freshmart.id</li>
+          <li><i class="fas fa-location-dot"></i> Jakarta, Indonesia</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 FreshMart. Semua hak dilindungi. Dibuat dengan ❤️ untuk Indonesia.</p>
+    </div>
+  </footer>
+
+  <!-- ===== CHATBOT ===== -->
+  <div class="chat-widget" id="chatWidget">
+    <div class="chat-header" id="chatHeader">
+      <div class="chat-header-info">
+        <div class="chat-avatar"><i class="fas fa-robot"></i></div>
+        <div>
+          <strong>CS FreshMart</strong>
+          <span class="chat-status"><span class="dot"></span>Online</span>
+        </div>
+      </div>
+      <button class="chat-close" id="chatClose"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="chat-body" id="chatBody">
+      <div class="chat-welcome">
+        <div class="chat-avatar-lg"><i class="fas fa-robot"></i></div>
+        <p>Halo! Selamat datang di <b>FreshMart</b> 👋<br/>Saya asisten produk AI Anda. Tanya apa saja tentang produk, harga, atau kategori!</p>
+        <div class="quick-replies">
+          <button onclick="sendQuickReply('Ada promo apa hari ini?')">🏷️ Promo Hari Ini</button>
+          <button onclick="sendQuickReply('Cara pembayaran apa saja?')">💳 Cara Bayar</button>
+        </div>
+      </div>
+    </div>
+    <div class="chat-footer">
+      <input type="text" id="chatInput" placeholder="Ketik pesan..." onkeydown="handleKey(event)" />
+      <button class="btn-send" id="btnSend" onclick="sendMessage()"><i class="fas fa-paper-plane"></i></button>
+    </div>
+  </div>
+
+  <!-- Tombol buka chat -->
+  <button class="chat-toggle" id="chatToggle" onclick="toggleChat()">
+    <i class="fas fa-comment-dots" id="chatIcon"></i>
+    <span class="chat-notif">1</span>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
